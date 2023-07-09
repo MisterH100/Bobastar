@@ -1,6 +1,5 @@
 import {productData} from "../utils/data";
 
-
 function Product(){
     const productDetails = productData.map(product =>
 
@@ -15,14 +14,14 @@ function Product(){
               className="mx-auto "
             />
             <p className="text-center text-white text-[20px] font-extrabold">R{product.price}</p>
-            <button className="w-[204px] h-10 block mx-auto text-white bg-red-600 rounded-[40px] border-[1px] border-transparent hover:bg-inherit hover:border-white transition-all transition-[0.2s]">Buy</button>
+            <button className="w-[204px] h-10 block mx-auto text-white bg-red-600 rounded-[40px] border-[1px] border-transparent hover:bg-inherit hover:border-white transition-all duration-[0.5s]">Buy</button>
         </div>
         
     );
 
     return(
  
-        <div  className="w-[250px] h-[300px]">
+        <div  data-aos="zoom-in" className="w-[250px] h-[300px]">
             {productDetails}
         </div>
      

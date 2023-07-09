@@ -6,8 +6,21 @@ import Menu from './components/menu';
 import Sponsors from './components/sponsors';
 import Footer from './components/footer';
 
+import { useEffect } from "react";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 function App() {
+
+  useEffect(() =>{
+    AOS.init({
+      duration: 1200,
+    });
+  }, [])
+
   return (
     <div className="App bg-zinc-950">
       <Header/>
